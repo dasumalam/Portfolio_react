@@ -11,17 +11,17 @@ const Hero = ({ heroTitleRef, onNavClick }) => {
       </div>
       
       {/* Floating Elements */}
-      <div className="absolute top-10 sm:top-20 left-5 sm:left-10 text-blue-400/30 animate-float">
-        <i className="fas fa-code text-2xl sm:text-3xl md:text-4xl"></i>
+      <div className="absolute top-8 sm:top-20 left-4 sm:left-10 text-blue-400/30 animate-float">
+        <i className="fas fa-code text-xl sm:text-3xl md:text-4xl"></i>
       </div>
-      <div className="absolute top-20 sm:top-40 right-5 sm:right-20 text-purple-400/30 animate-float" style={{animationDelay: '1s'}}>
-        <i className="fas fa-palette text-xl sm:text-2xl md:text-3xl"></i>
+      <div className="absolute top-16 sm:top-40 right-4 sm:right-20 text-purple-400/30 animate-float" style={{animationDelay: '1s'}}>
+        <i className="fas fa-palette text-lg sm:text-2xl md:text-3xl"></i>
       </div>
-      <div className="absolute bottom-10 sm:bottom-20 left-5 sm:left-20 text-pink-400/30 animate-float" style={{animationDelay: '2s'}}>
-        <i className="fas fa-laptop-code text-xl sm:text-2xl md:text-3xl"></i>
+      <div className="absolute bottom-16 sm:bottom-20 left-4 sm:left-20 text-pink-400/30 animate-float" style={{animationDelay: '2s'}}>
+        <i className="fas fa-laptop-code text-lg sm:text-2xl md:text-3xl"></i>
       </div>
-      <div className="absolute bottom-20 sm:bottom-40 right-5 sm:right-10 text-green-400/30 animate-float" style={{animationDelay: '3s'}}>
-        <i className="fas fa-mobile-alt text-lg sm:text-xl md:text-2xl"></i>
+      <div className="absolute bottom-24 sm:bottom-40 right-4 sm:right-10 text-green-400/30 animate-float" style={{animationDelay: '3s'}}>
+        <i className="fas fa-mobile-alt text-base sm:text-xl md:text-2xl"></i>
       </div>
       
       <div className="container mx-auto px-4 text-center z-10">
