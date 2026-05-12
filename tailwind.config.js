@@ -13,6 +13,8 @@ export default {
         'float': 'float 3s ease-in-out infinite',
         'gradient': 'gradient 8s ease infinite',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'infinite-scroll': 'infiniteScroll 25s linear infinite',
+        'infinite-scroll-reverse': 'infiniteScrollReverse 30s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -34,6 +36,14 @@ export default {
         gradient: {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
+        },
+        infiniteScroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        infiniteScrollReverse: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
       backdropBlur: {

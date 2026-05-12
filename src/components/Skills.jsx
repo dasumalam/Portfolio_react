@@ -73,25 +73,27 @@ const Skills = () => {
           </div>
         </div>
         
-        {/* Skills Grid - Responsive Grid Layout for Better Mobile Display */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4 md:gap-6 px-4">
-          {getFilteredSkills().map((skill, index) => (
-            <div 
-              key={`${skill.name}-${index}`}
-              className="flex flex-col items-center justify-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 p-3 sm:p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 animate-slide-up"
-              style={{animationDelay: `${index * 0.05}s`}}
-            >
-              {/* Icon with dark background */}
-              <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-16 rounded-full bg-gray-800 mb-2 sm:mb-3 group-hover:bg-gray-700 transition-colors duration-300">
-                <i className={`${skill.icon} ${skill.color} text-base sm:text-lg md:text-xl lg:text-2xl transition-all duration-300 ease-in-out group-hover:scale-110`}></i>
+        {/* Skills Grid - Static Grid Layout */}
+        <div className="px-4 pb-4">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4 md:gap-5">
+            {getFilteredSkills().map((skill, index) => (
+              <div 
+                key={`${skill.name}-${index}`}
+                className="flex flex-col items-center justify-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 animate-slide-up"
+                style={{animationDelay: `${index * 0.05}s`}}
+              >
+                {/* Icon with dark background */}
+                <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-gray-800 mb-2 sm:mb-3 group-hover:bg-gray-700 transition-colors duration-300">
+                  <i className={`${skill.icon} ${skill.color} text-sm sm:text-base md:text-lg lg:text-xl transition-all duration-300 ease-in-out group-hover:scale-110`}></i>
+                </div>
+                
+                {/* Skill Name */}
+                <span className="text-white font-medium text-xs sm:text-sm text-center leading-tight">
+                  {skill.name}
+                </span>
               </div>
-              
-              {/* Skill Name */}
-              <span className="text-white font-medium text-xs sm:text-sm text-center leading-tight">
-                {skill.name}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         
         {/* Background Decorations */}

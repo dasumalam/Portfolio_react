@@ -3,7 +3,7 @@ import resumePDF from '../assets/Darshna_Malam .pdf';
 
 const Hero = ({ heroTitleRef, onNavClick }) => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-[80vh] sm:min-h-screen flex items-center justify-center relative overflow-hidden py-8 sm:py-0">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/30 via-gray-900/40 to-slate-800/30 animate-gradient"></div>
