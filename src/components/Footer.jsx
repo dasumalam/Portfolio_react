@@ -86,15 +86,7 @@ const Footer = () => {
                   <span className="text-gray-500 text-xs sm:text-sm">Email</span>
                 </div>
               </div>
-              <div className="flex items-start space-x-3 sm:space-x-4 group">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-500/20 transition-colors duration-300">
-                  <i className="fas fa-phone text-green-400 text-sm sm:text-base"></i>
-                </div>
-                <div>
-                  <span className="text-gray-300 block text-sm sm:text-base">+91 7265925674</span>
-                  <span className="text-gray-500 text-xs sm:text-sm">Phone</span>
-                </div>
-              </div>
+              
               <div className="flex items-start space-x-3 sm:space-x-4 group">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/20 transition-colors duration-300">
                   <i className="fas fa-map-marker-alt text-red-400 text-sm sm:text-base"></i>
