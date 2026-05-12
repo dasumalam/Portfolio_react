@@ -1,13 +1,13 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
-import Gallery from '../components/Gallery';
-import MessageViewer from '../components/MessageViewer';
-import Footer from '../components/Footer';
+import Navigation from './Navigation';
+import Hero from './Hero';
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
+import Gallery from './Gallery';
+import MessageViewer from './MessageViewer';
+import Footer from './Footer';
 import { 
   useScrollEffect, 
   usePageLoad, 
