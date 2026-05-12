@@ -67,126 +67,98 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="max-w-lg mx-auto">
-          <div className="grid md:grid-cols-1 gap-8">
-            {/* Contact Form */}
-            <div className="animate-slide-up">
-              <div className="bg-white/5 p-4 sm:p-6 md:p-8 rounded-2xl border border-white/20">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Send Message</h3>
+        {/* Footer Section */}
+        <div className="mt-16 sm:mt-20">
+          <div className="grid grid-cols-3 gap-6 sm:gap-8 lg:gap-12 mb-8 sm:mb-12">
+            {/* Brand Section */}
+            <div className="space-y-4 sm:space-y-6">
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                  Darshna Malam
+                </h3>
+                <div className="w-12 sm:w-16 h-0.5 bg-white/30 rounded-full"></div>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                Web Developer & UI/UX Designer passionate about creating beautiful and functional digital experiences.
+              </p>
+              <div className="flex space-x-3 sm:space-x-4">
+                <a href="https://github.com/dasumalam" target="_blank" rel="noopener noreferrer" 
+                   className="group w-10 h-10 sm:w-12 sm:h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/30 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+                  <i className="fab fa-github text-gray-400 group-hover:text-white text-sm sm:text-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/darshna-malam?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" 
+                   className="group w-10 h-10 sm:w-12 sm:h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/30 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+                  <i className="fab fa-linkedin-in text-gray-400 group-hover:text-white text-sm sm:text-lg"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-4 sm:space-y-6">
+              <div>
+                <h4 className="text-lg sm:text-xl font-semibold text-white mb-2">Quick Links</h4>
+                <div className="w-8 sm:w-12 h-0.5 bg-white/30 rounded-full"></div>
+              </div>
+              <ul className="space-y-2 sm:space-y-3">
+                <li>
+                  <a href="#home" className="flex items-center text-gray-300 hover:text-white transition-all duration-300 group">
+                    <i className="fas fa-home w-4 sm:w-5 text-blue-400 group-hover:scale-110 transition-transform duration-300 text-sm sm:text-base"></i>
+                    <span className="ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base">Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" className="flex items-center text-gray-300 hover:text-white transition-all duration-300 group">
+                    <i className="fas fa-user w-4 sm:w-5 text-purple-400 group-hover:scale-110 transition-transform duration-300 text-sm sm:text-base"></i>
+                    <span className="ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base">About</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#skills" className="flex items-center text-gray-300 hover:text-white transition-all duration-300 group">
+                    <i className="fas fa-code w-4 sm:w-5 text-green-400 group-hover:scale-110 transition-transform duration-300 text-sm sm:text-base"></i>
+                    <span className="ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base">Skills</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" className="flex items-center text-gray-300 hover:text-white transition-all duration-300 group">
+                    <i className="fas fa-briefcase w-4 sm:w-5 text-orange-400 group-hover:scale-110 transition-transform duration-300 text-sm sm:text-base"></i>
+                    <span className="ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base">Projects</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="flex items-center text-gray-300 hover:text-white transition-all duration-300 group">
+                    <i className="fas fa-envelope w-4 sm:w-5 text-red-400 group-hover:scale-110 transition-transform duration-300 text-sm sm:text-base"></i>
+                    <span className="ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base">Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-4 sm:space-y-6">
+              <div>
+                <h4 className="text-lg sm:text-xl font-semibold text-white mb-2">Contact Info</h4>
+                <div className="w-8 sm:w-12 h-0.5 bg-white/30 rounded-full"></div>
+              </div>
+              <div className="space-y-3 sm:space-y-4">
+                <div className="flex items-start space-x-3 sm:space-x-4 group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition-colors duration-300">
+                    <i className="fas fa-envelope text-blue-400 text-sm sm:text-base"></i>
+                  </div>
+                  <div>
+                    <span className="text-gray-300 block text-sm sm:text-base">darshnamalam22@gmail.com</span>
+                    <span className="text-gray-500 text-xs sm:text-sm">Email</span>
+                  </div>
+                </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
-                  <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="group">
-                      <label htmlFor="name" className="block text-white mb-2 font-medium transition-colors group-focus-within:text-blue-400 text-sm sm:text-base">
-                        <i className="fas fa-user mr-2 text-gray-400 text-sm sm:text-base"></i>Name
-                      </label>
-                      <input 
-                        type="text" 
-                        id="name" 
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all duration-300 transform focus:scale-[1.02] text-sm sm:text-base"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                    
-                    <div className="group">
-                      <label htmlFor="email" className="block text-white mb-2 font-medium transition-colors group-focus-within:text-blue-400 text-sm sm:text-base">
-                        <i className="fas fa-envelope mr-2 text-gray-400 text-sm sm:text-base"></i>Email
-                      </label>
-                      <input 
-                        type="email" 
-                        id="email" 
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all duration-300 transform focus:scale-[1.02] text-sm sm:text-base"
-                        placeholder="your.email@example.com"
-                        required
-                      />
-                    </div>
+                <div className="flex items-start space-x-3 sm:space-x-4 group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/20 transition-colors duration-300">
+                    <i className="fas fa-map-marker-alt text-red-400 text-sm sm:text-base"></i>
                   </div>
-                  
-                  <div className="group">
-                    <label htmlFor="subject" className="block text-white mb-2 font-medium transition-colors group-focus-within:text-blue-400 text-sm sm:text-base">
-                      <i className="fas fa-tag mr-2 text-gray-400 text-sm sm:text-base"></i>Subject
-                    </label>
-                    <input 
-                      type="text" 
-                      id="subject" 
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all duration-300 transform focus:scale-[1.02] text-sm sm:text-base"
-                      placeholder="Project Inquiry"
-                      required
-                    />
+                  <div>
+                    <span className="text-gray-300 block text-sm sm:text-base">Junagadh, Gujarat, India</span>
+                    <span className="text-gray-500 text-xs sm:text-sm">Location</span>
                   </div>
-                  
-                  <div className="group">
-                    <label htmlFor="message" className="block text-white mb-2 font-medium transition-colors group-focus-within:text-blue-400 text-sm sm:text-base">
-                      <i className="fas fa-message mr-2 text-gray-400 text-sm sm:text-base"></i>Message
-                    </label>
-                    <textarea 
-                      id="message" 
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows="4"
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all duration-300 transform focus:scale-[1.02] resize-none text-sm sm:text-base"
-                      placeholder="Tell me about your project..."
-                      required
-                    ></textarea>
-                  </div>
-                  
-                  {/* Status Messages */}
-                  <div className={`transition-all duration-500 ${submitStatus ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
-                    {submitStatus === 'success' && (
-                      <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/50 text-green-400 px-4 sm:px-6 py-3 sm:py-4 rounded-lg flex items-center justify-center animate-pulse">
-                        <i className="fas fa-check-circle mr-2 sm:mr-3 text-lg sm:text-xl"></i>
-                        <div className="text-center">
-                          <p className="font-medium text-sm sm:text-base lg:text-lg">Message sent successfully!</p>
-                          <p className="text-xs sm:text-sm text-green-300 mt-1">Thank you for contacting me. I'll get back to you soon.</p>
-                          <p className="text-xs sm:text-sm text-green-200 mt-2">Email: darshnamalam22@gmail.com</p>
-                        </div>
-                      </div>
-                    )}
-                    
-                    {submitStatus === 'error' && (
-                      <div className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border border-red-500/50 text-red-400 px-3 sm:px-4 py-2 sm:py-3 rounded-lg flex items-center">
-                        <i className="fas fa-exclamation-circle mr-2 sm:mr-3 text-sm sm:text-lg"></i>
-                        <div>
-                          <p className="font-medium text-xs sm:text-sm">Failed to send message</p>
-                          <p className="text-xs text-red-300">Please check your connection and try again.</p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                  
-                  {!submitStatus && (
-                    <div className="flex justify-center">
-                      <button 
-                        type="submit"
-                        disabled={isSubmitting}
-                        className={`relative overflow-hidden group px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 w-fit text-sm sm:text-base ${
-                          isSubmitting 
-                            ? 'bg-gradient-to-r from-gray-400 to-gray-500 text-gray-200 cursor-not-allowed' 
-                            : 'bg-gradient-to-r from-white to-gray-100 text-black hover:from-gray-100 hover:to-white shadow-lg hover:shadow-xl'
-                        }`}
-                      >
-                      <div className={`absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 transition-all duration-500 ${
-                        isSubmitting ? 'translate-x-0' : 'translate-x-full'
-                      }`}></div>
-                      <span className="relative flex items-center justify-center">
-                        <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'} mr-1 sm:mr-2 text-xs sm:text-sm`}></i>
-                        {isSubmitting ? 'Sending...' : 'Send Message'}
-                      </span>
-                    </button>
-                    </div>
-                  )}
-                </form>
+                </div>
               </div>
             </div>
           </div>

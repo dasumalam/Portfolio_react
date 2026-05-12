@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../assets/Darshna_Malam .pdf';
+import resumePDF from '../assets/Darshnamalam.pdf';
 
 const Hero = ({ heroTitleRef, onNavClick }) => {
   return (

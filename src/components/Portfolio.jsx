@@ -6,8 +6,6 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Gallery from './Gallery';
-import MessageViewer from './MessageViewer';
-import Footer from './Footer';
 import { 
   useScrollEffect, 
   usePageLoad, 
@@ -91,12 +89,6 @@ const Portfolio = () => {
         onNext={nextImage}
         onPrev={prevImage}
       />
-
-      {/* Message Viewer */}
-      <MessageViewer />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };
