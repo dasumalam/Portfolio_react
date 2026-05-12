@@ -1,0 +1,63 @@
+@import "tailwindcss";
+/* Custom styles that cannot be done with Tailwind utilities */
+
+/* Navigation link underline effect */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Text selection styling */
+::selection {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animate-float,
+  .animate-gradient {
+    animation: none !important;
+  }
+}
