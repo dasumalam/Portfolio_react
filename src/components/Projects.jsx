@@ -20,13 +20,13 @@ const Projects = ({ activeCategory, onProjectFilter, openGallery }) => {
         </div>
         
         {/* Project Categories Tabs */}
-        <div className="flex justify-center mb-12">
-          <div className="bg-white/5 rounded-full p-1 border border-white/20">
+        <div className="flex justify-center mb-12 px-2 sm:px-4">
+          <div className="bg-white/5 rounded-full p-1 border border-white/20 flex justify-center gap-1 sm:gap-2">
             {PROJECT_CATEGORIES.map(category => (
               <button 
                 key={category.id}
                 onClick={() => onProjectFilter(category.id)}
-                className={`project-tab px-6 py-2 rounded-full transition-all duration-300 ${
+                className={`project-tab px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 rounded-full transition-all duration-300 text-xs sm:text-sm whitespace-nowrap ${
                   activeCategory === category.id 
                     ? 'text-white bg-white/10' 
                     : 'text-gray-400 hover:text-white'
@@ -39,7 +39,7 @@ const Projects = ({ activeCategory, onProjectFilter, openGallery }) => {
         </div>
         
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-2 sm:px-4">
           {filteredProjects.map((project, index) => (
             <div 
               key={project.id} 

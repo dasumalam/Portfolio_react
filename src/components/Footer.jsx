@@ -19,23 +19,15 @@ const Footer = () => {
               Web Developer & UI/UX Designer passionate about creating beautiful and functional digital experiences.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/dasumalam" target="_blank" rel="noopener noreferrer" 
                  className="group w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/30 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
                 <i className="fab fa-github text-gray-400 group-hover:text-white text-lg"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.linkedin.com/in/darshna-malam?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" 
                  className="group w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/30 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
                 <i className="fab fa-linkedin-in text-gray-400 group-hover:text-white text-lg"></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
-                 className="group w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/30 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
-                <i className="fab fa-twitter text-gray-400 group-hover:text-white text-lg"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-                 className="group w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/30 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
-                <i className="fab fa-instagram text-gray-400 group-hover:text-white text-lg"></i>
-              </a>
-            </div>
+                          </div>
           </div>
 
           {/* Quick Links */}

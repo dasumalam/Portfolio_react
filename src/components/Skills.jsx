@@ -49,13 +49,13 @@ const Skills = () => {
         </div>
 
         {/* Category Navigation */}
-        <div className="flex justify-center mb-12">
-          <div className="bg-white/5 rounded-full p-1 border border-white/20">
+        <div className="flex justify-center mb-12 px-2 sm:px-4">
+          <div className="bg-white/5 rounded-full p-1 border border-white/20 flex justify-center gap-1 sm:gap-2 md:gap-3 overflow-x-auto">
             {['all', 'frontend', 'design', 'tools'].map((category, index) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                className={`px-2 sm:px-3 md:px-4 lg:px-6 py-1 sm:py-1.5 md:py-2 rounded-full transition-all duration-300 text-xs sm:text-xs md:text-sm whitespace-nowrap ${
                   activeCategory === category
                     ? 'text-white bg-white/10'
                     : 'text-gray-400 hover:text-white'

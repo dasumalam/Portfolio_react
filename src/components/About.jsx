@@ -67,7 +67,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 flex items-center">
                   <i className="fas fa-graduation-cap text-purple-400 mr-3"></i>
@@ -116,25 +116,25 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            
-            <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <i className="fas fa-star text-yellow-400 mr-3"></i>
-                Professional Attributes
-              </h3>
-              <div className="flex flex-wrap gap-3">
-                {['Problem Solver', 'Detail Oriented', 'Fast Learner', 'Team Player', 'Creative Thinker', 'Time Management'].map((skill, index) => (
-                  <span key={index} className="bg-gradient-to-r from-white/10 to-white/5 text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
-                    {skill}
-                  </span>
-                ))}
+              
+              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                  <i className="fas fa-star text-yellow-400 mr-3"></i>
+                  Professional Attributes
+                </h3>
+                <div className="space-y-3">
+                  {['Problem Solver', 'Fast Learner', 'Team Player', 'Creative Thinker', 'Time Management'].map((skill, index) => (
+                    <div key={index} className="group flex items-center p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:translate-x-1">
+                      <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full mr-3 group-hover:animate-pulse"></div>
+                      <span className="text-white text-sm font-medium group-hover:text-yellow-300 transition-colors duration-300">{skill}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
+    </div>
     </section>
   );
 };

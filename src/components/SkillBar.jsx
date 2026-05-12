@@ -1,15 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const SkillBar = ({ skill, level, color = 'blue' }) => {
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setWidth(level);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, [level]);
-
   const colorClasses = {
     blue: 'bg-blue-500',
     green: 'bg-green-500',
@@ -27,11 +18,9 @@ const SkillBar = ({ skill, level, color = 'blue' }) => {
       </div>
       <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
         <div 
-          className={`${colorClasses[color]} h-full rounded-full transition-all duration-1000 ease-out relative overflow-hidden`}
-          style={{ width: `${width}%` }}
-        >
-          <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-        </div>
+          className={`${colorClasses[color]} h-full rounded-full transition-all duration-1000 ease-out`}
+          style={{ width: `${level}%` }}
+        />
       </div>
     </div>
   );

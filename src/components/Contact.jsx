@@ -144,11 +144,12 @@ const Contact = () => {
                   {/* Status Messages */}
                   <div className={`transition-all duration-500 ${submitStatus ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
                     {submitStatus === 'success' && (
-                      <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/50 text-green-400 px-4 py-3 rounded-lg flex items-center animate-pulse">
-                        <i className="fas fa-check-circle mr-3 text-lg"></i>
-                        <div>
-                          <p className="font-medium">Message saved successfully!</p>
-                          <p className="text-sm text-green-300">Darshna will receive your message soon.</p>
+                      <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/50 text-green-400 px-6 py-4 rounded-lg flex items-center justify-center animate-pulse">
+                        <i className="fas fa-check-circle mr-3 text-xl"></i>
+                        <div className="text-center">
+                          <p className="font-medium text-lg">Message sent successfully!</p>
+                          <p className="text-sm text-green-300 mt-1">Thank you for contacting me. I'll get back to you soon.</p>
+                          <p className="text-sm text-green-200 mt-2">Email: darshnamalam22@gmail.com</p>
                         </div>
                       </div>
                     )}
@@ -164,25 +165,27 @@ const Contact = () => {
                     )}
                   </div>
                   
-                  <div className="flex justify-center">
-                    <button 
-                      type="submit"
-                      disabled={isSubmitting}
-                      className={`relative overflow-hidden group px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 w-fit ${
-                        isSubmitting 
-                          ? 'bg-gradient-to-r from-gray-400 to-gray-500 text-gray-200 cursor-not-allowed' 
-                          : 'bg-gradient-to-r from-white to-gray-100 text-black hover:from-gray-100 hover:to-white shadow-lg hover:shadow-xl'
-                      }`}
-                    >
-                    <div className={`absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 transition-all duration-500 ${
-                      isSubmitting ? 'translate-x-0' : 'translate-x-full'
-                    }`}></div>
-                    <span className="relative flex items-center justify-center">
-                      <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'} mr-2`}></i>
-                      {isSubmitting ? 'Sending...' : 'Send Message'}
-                    </span>
-                  </button>
-                  </div>
+                  {!submitStatus && (
+                    <div className="flex justify-center">
+                      <button 
+                        type="submit"
+                        disabled={isSubmitting}
+                        className={`relative overflow-hidden group px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 w-fit ${
+                          isSubmitting 
+                            ? 'bg-gradient-to-r from-gray-400 to-gray-500 text-gray-200 cursor-not-allowed' 
+                            : 'bg-gradient-to-r from-white to-gray-100 text-black hover:from-gray-100 hover:to-white shadow-lg hover:shadow-xl'
+                        }`}
+                      >
+                      <div className={`absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 transition-all duration-500 ${
+                        isSubmitting ? 'translate-x-0' : 'translate-x-full'
+                      }`}></div>
+                      <span className="relative flex items-center justify-center">
+                        <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'} mr-2`}></i>
+                        {isSubmitting ? 'Sending...' : 'Send Message'}
+                      </span>
+                    </button>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
