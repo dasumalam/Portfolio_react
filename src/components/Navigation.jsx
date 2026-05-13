@@ -29,13 +29,13 @@ const Navigation = ({ scrolled, mobileMenuOpen, onMobileMenuToggle, onNavClick }
       </div>
       
       {/* Mobile Navigation */}
-      <div className={`md:hidden absolute top-16 left-3 right-3 sm:left-auto sm:right-4 sm:w-44 bg-slate-900/95 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 transition-all duration-300 origin-top ${mobileMenuOpen ? 'block opacity-100 scale-y-100' : 'hidden opacity-0 scale-y-95'}`} style={{ backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(0, 0, 0, 0.95) 100%)' }}>
-        <div className="py-2">
-          <a href="#home" onClick={(e) => onNavClick(e, '#home')} className="block px-4 py-3 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Home</a>
-          <a href="#about" onClick={(e) => onNavClick(e, '#about')} className="block px-4 py-3 text-white hover:bg-white/10 transition-colors duration-300 font-medium">About</a>
-          <a href="#skills" onClick={(e) => onNavClick(e, '#skills')} className="block px-4 py-3 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Skills</a>
-          <a href="#projects" onClick={(e) => onNavClick(e, '#projects')} className="block px-4 py-3 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Projects</a>
-          <a href="#contact" onClick={(e) => onNavClick(e, '#contact')} className="block px-4 py-3 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Contact</a>
+      <div className={`md:hidden absolute top-16 right-3 left-auto w-max min-w-32 max-w-[calc(100vw-1.5rem)] bg-slate-900/95 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 transition-all duration-300 origin-top-right ${mobileMenuOpen ? 'block opacity-100 scale-y-100' : 'hidden opacity-0 scale-y-95'}`} style={{ backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(0, 0, 0, 0.95) 100%)' }}>
+        <div className="py-1.5 text-center">
+          <a href="#home" onClick={(e) => onNavClick(e, '#home')} className="block px-4 py-2 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Home</a>
+          <a href="#about" onClick={(e) => onNavClick(e, '#about')} className="block px-4 py-2 text-white hover:bg-white/10 transition-colors duration-300 font-medium">About</a>
+          <a href="#skills" onClick={(e) => onNavClick(e, '#skills')} className="block px-4 py-2 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Skills</a>
+          <a href="#projects" onClick={(e) => onNavClick(e, '#projects')} className="block px-4 py-2 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Projects</a>
+          <a href="#contact" onClick={(e) => onNavClick(e, '#contact')} className="block px-4 py-2 text-white hover:bg-white/10 transition-colors duration-300 font-medium">Contact</a>
         </div>
       </div>
     </nav>
