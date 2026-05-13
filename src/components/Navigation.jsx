@@ -22,8 +22,7 @@ const Navigation = ({ scrolled, mobileMenuOpen, onMobileMenuToggle, onNavClick }
           <button 
             onClick={onMobileMenuToggle}
             className="md:hidden text-white hover:text-gray-300 transition-all duration-300 p-2 rounded-lg hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 transform hover:scale-105 active:scale-95"
-            aria-label="Toggle mobile menu"
-          >
+            aria-label="Toggle mobile menu">
             <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl w-6 h-6 flex items-center justify-center transition-all duration-300 ${mobileMenuOpen ? 'rotate-90' : 'rotate-0'}`}></i>
           </button>
         </div>
