@@ -47,16 +47,26 @@ const Hero = ({ heroTitleRef, onNavClick }) => {
             Passionate about creating beautiful, functional, and user-friendly web experiences that make a difference
           </p>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center animate-slide-up px-4" style={{animationDelay: '0.6s'}}>
-            <a href={resumePDF} target="_blank" 
-               className="group border border-white/50 hover:border-white text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
-              <i className="fas fa-download mr-2 text-sm sm:text-base group-hover:animate-bounce"></i>
+          {/* CTA Buttons — same horizontal pill layout on mobile + desktop */}
+          <div
+            className="flex flex-row flex-nowrap justify-center items-center gap-2.5 sm:gap-6 animate-slide-up px-2 sm:px-4 max-w-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            style={{ animationDelay: '0.6s' }}
+          >
+            <a
+              href={resumePDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group border border-white/50 hover:border-white text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-base font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 whitespace-nowrap shrink-0"
+            >
+              <i className="fas fa-download text-xs sm:text-base shrink-0 group-hover:animate-bounce"></i>
               Download Resume
             </a>
-            <a href="#projects" onClick={(e) => onNavClick(e, '#projects')}
-               className="group border border-white/50 hover:border-white text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
-              <i className="fas fa-briefcase mr-2 text-sm sm:text-base group-hover:rotate-12 transition-transform duration-300"></i>
+            <a
+              href="#projects"
+              onClick={(e) => onNavClick(e, '#projects')}
+              className="group border border-white/50 hover:border-white text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-base font-medium transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 whitespace-nowrap shrink-0"
+            >
+              <i className="fas fa-briefcase text-xs sm:text-base shrink-0 group-hover:rotate-12 transition-transform duration-300"></i>
               View My Work
             </a>
           </div>
