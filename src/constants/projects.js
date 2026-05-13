@@ -22,7 +22,10 @@ import smartShowLogin from '../assets/Smart-show/login.png';
 import smartShowFileManager from '../assets/Smart-show/File-Manager.png';
 import smartShowBackupStore from '../assets/Smart-show/backup-store.png';
 import nimbusAiConsole from '../assets/Nimbus_Ai/console.png';
-import nimbusAiPanel from '../assets/Nimbus_Ai/penal.png';
+import nimbusAiLaunch from '../assets/Nimbus_Ai/Launch.png';
+import nimbusAiInstances from '../assets/Nimbus_Ai/Instances.png';
+import nimbusAiAmi from '../assets/Nimbus_Ai/ami.png';
+import nimbusAiSetting from '../assets/Nimbus_Ai/setting.png';
 
 export const PROJECTS = [
   {
@@ -60,7 +63,13 @@ export const PROJECTS = [
     title: 'Nimbus AI',
     category: 'web',
     image: nimbusAiConsole,
-    gallery: [nimbusAiConsole, nimbusAiPanel],
+    gallery: [
+      nimbusAiConsole,
+      nimbusAiLaunch,
+      nimbusAiInstances,
+      nimbusAiAmi,
+      nimbusAiSetting,
+    ],
     description: 'Advanced AI-powered platform built with React.js, featuring intelligent console interface and comprehensive control panel for seamless AI management and automation.',
     technologies: ['React.js', 'AI/ML', 'JavaScript'],
     liveUrl: null

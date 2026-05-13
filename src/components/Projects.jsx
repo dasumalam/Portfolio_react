@@ -80,7 +80,7 @@ const Projects = ({ activeCategory, onProjectFilter, openGallery }) => {
                       </div>
                     </div>
                   </div>
-                                  </div>
+                </div>
                 <div className="p-3 sm:p-4">
                   <div className="flex items-start justify-between mb-2">
                     <h4 className="text-base sm:text-lg font-semibold text-white flex-1">{project.title}</h4>

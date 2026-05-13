@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImage from '../assets/hero.png';
 import nsdcCertificate from '../assets/nsdc_certificate_54320.pdf';
 import topsCertificate from '../assets/tops_certificate_98055.pdf';
 
@@ -8,7 +7,7 @@ const About = () => {
     <section id="about" className="py-20 bg-gradient-to-br from-slate-900 via-black to-slate-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white px-4 sm:px-6 md:px-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white px-4 sm:px-6 md:px-8">
             <span className="text-white">
               About Me
             </span>
@@ -21,9 +20,6 @@ const About = () => {
         
         <div className="max-w-4xl mx-auto">
           <div className="space-y-6">
-           
-
-            
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300">
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4 flex items-center">
                 <i className="fas fa-quote-left text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base md:text-lg"></i>
@@ -37,8 +33,7 @@ const About = () => {
               </p>
             </div>
 
-
-             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300">
+            <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300">
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center">
                 <i className="fas fa-briefcase text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base md:text-lg"></i>
                 Professional Experience

@@ -26,7 +26,6 @@ const Hero = ({ heroTitleRef, onNavClick }) => {
       
       <div className="container mx-auto px-4 text-center z-10">
         <div className="animate-fade-in">
-                    
           {/* Main Title */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-white leading-tight px-4 sm:px-6 md:px-8">
             <span ref={heroTitleRef} className="bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
@@ -70,8 +69,7 @@ const Hero = ({ heroTitleRef, onNavClick }) => {
               View My Work
             </a>
           </div>
-          
-                  </div>
+        </div>
       </div>
       
       {/* Scroll Indicator */}
